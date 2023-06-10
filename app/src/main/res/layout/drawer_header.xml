@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@color/tomato">
+
+    <ImageView
+        android:id="@+id/imgLogoDrawerHeader"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/foodrunner_logo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtLogoNameDrawerHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogoDrawerHeader"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtNavigationDrawerHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLogoNameDrawerHeader"
+        android:text="@string/navigation_drawer"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"/>
+</RelativeLayout>

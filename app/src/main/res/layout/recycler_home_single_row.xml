@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llContent"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:id="@+id/imgHotelImage"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1.5"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+
+            <RelativeLayout
+                android:id="@+id/rlLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.0">
+
+                <TextView
+                    android:id="@+id/txtHotelName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Hotel Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtCostForOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtHotelName"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_rupee"
+                    android:drawablePadding="3dp"
+                    android:padding="8dp"
+                    android:text="250/person"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:drawableTop="@drawable/ic_favourite"
+                android:drawablePadding="8dp"
+                android:text="4.5"
+                android:textColor="@color/yellow"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <View
+            android:id="@+id/viewDrawableBorderFF"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
